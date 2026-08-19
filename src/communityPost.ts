@@ -349,7 +349,7 @@ export function createCommunityPostStore(opts?: { dataDir?: string; persist?: bo
         if (Array.isArray(d)) reports = d as Report[]
       }
     } catch (e) {
-      console.error('[community/post] 로드 실패 — 빈 상태로 시작:', e)
+      console.error('[community/post] 로드 실패. 빈 상태로 시작:', e)
     }
   }
 
